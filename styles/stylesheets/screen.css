@@ -1,0 +1,390 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 36, ../../node_modules/sass-sandal/core/_mixin.scss */
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+/* line 41, ../../node_modules/sass-sandal/core/_mixin.scss */
+.clearfix::after {
+  clear: both;
+}
+
+/* line 14, ../../node_modules/sass-sandal/core/_reset.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+/* line 22, ../../node_modules/sass-sandal/core/_reset.scss */
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", Roboto, "Hiragino Sans GB", "Source Han Sans CN", Fira Sans, "Droid Sans", "Helvetica Neue", arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* line 42, ../../node_modules/sass-sandal/core/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 59, ../../node_modules/sass-sandal/core/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* line 67, ../../node_modules/sass-sandal/core/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 73, ../../node_modules/sass-sandal/core/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 79, ../../node_modules/sass-sandal/core/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 91, ../../node_modules/sass-sandal/core/_reset.scss */
+a {
+  background: transparent;
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  text-decoration: none;
+  color: #08c;
+}
+/* line 97, ../../node_modules/sass-sandal/core/_reset.scss */
+a:active {
+  outline: 0;
+}
+
+/* line 108, ../../node_modules/sass-sandal/core/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/* line 115, ../../node_modules/sass-sandal/core/_reset.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* line 121, ../../node_modules/sass-sandal/core/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 127, ../../node_modules/sass-sandal/core/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 132, ../../node_modules/sass-sandal/core/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 138, ../../node_modules/sass-sandal/core/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 143, ../../node_modules/sass-sandal/core/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 151, ../../node_modules/sass-sandal/core/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 155, ../../node_modules/sass-sandal/core/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 163, ../../node_modules/sass-sandal/core/_reset.scss */
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* line 170, ../../node_modules/sass-sandal/core/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 179, ../../node_modules/sass-sandal/core/_reset.scss */
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 187, ../../node_modules/sass-sandal/core/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 205, ../../node_modules/sass-sandal/core/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* line 219, ../../node_modules/sass-sandal/core/_reset.scss */
+button,
+input,
+select {
+  overflow: visible;
+}
+
+/* line 229, ../../node_modules/sass-sandal/core/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 239, ../../node_modules/sass-sandal/core/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 248, ../../node_modules/sass-sandal/core/_reset.scss */
+[disabled] {
+  cursor: default;
+}
+
+/* line 253, ../../node_modules/sass-sandal/core/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 261, ../../node_modules/sass-sandal/core/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/* line 270, ../../node_modules/sass-sandal/core/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 279, ../../node_modules/sass-sandal/core/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 287, ../../node_modules/sass-sandal/core/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+/* line 295, ../../node_modules/sass-sandal/core/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 301, ../../node_modules/sass-sandal/core/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 311, ../../node_modules/sass-sandal/core/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/* line 321, ../../node_modules/sass-sandal/core/_reset.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+/* line 329, ../../node_modules/sass-sandal/core/_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 334, ../../node_modules/sass-sandal/core/_reset.scss */
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+/* line 342, ../../node_modules/sass-sandal/core/_reset.scss */
+textarea,
+input {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+/* line 348, ../../node_modules/sass-sandal/core/_reset.scss */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* line 356, ../../node_modules/sass-sandal/core/_reset.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+}
+
+/* line 362, ../../node_modules/sass-sandal/core/_reset.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+/* line 368, ../../node_modules/sass-sandal/core/_reset.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 374, ../../node_modules/sass-sandal/core/_reset.scss */
+.placeholder {
+  color: #999;
+}
+
+/* line 381, ../../node_modules/sass-sandal/core/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 386, ../../node_modules/sass-sandal/core/_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 394, ../../node_modules/sass-sandal/core/_reset.scss */
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote {
+  margin: 0;
+}
+
+/* line 399, ../../node_modules/sass-sandal/core/_reset.scss */
+ul, ol, li, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 404, ../../node_modules/sass-sandal/core/_reset.scss */
+ul, ol {
+  list-style: none outside none;
+}
+
+/* line 409, ../../node_modules/sass-sandal/core/_reset.scss */
+h1, h2, h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+/* line 414, ../../node_modules/sass-sandal/core/_reset.scss */
+h1 {
+  font-size: 18px;
+}
+
+/* line 418, ../../node_modules/sass-sandal/core/_reset.scss */
+h2 {
+  font-size: 16px;
+}
+
+/* line 422, ../../node_modules/sass-sandal/core/_reset.scss */
+h3 {
+  font-size: 14px;
+}
+
+/* line 427, ../../node_modules/sass-sandal/core/_reset.scss */
+i {
+  font-style: normal;
+}
+
+/* line 433, ../../node_modules/sass-sandal/core/_reset.scss */
+* {
+  box-sizing: border-box;
+}
